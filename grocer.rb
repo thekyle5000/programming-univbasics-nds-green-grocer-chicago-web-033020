@@ -97,8 +97,24 @@ end
 
 
 def checkout(cart, coupons)
-  
+  cc_array = consolidate_cart(cart)
+  ac_array = apply_coupons(cc_array, coupons)
+  c_array = apply_clearance(ac_array)
+  #begin looping through cart to calculate total
+  element_index = 0
+  total = 0
+  while element_index < c_array do 
+    total += c_array[element_index][:price] * c_array[element_index][:count]
+    element_index += 1
+  end 
+  if total > 100.00
+    final_total = total * 0.90
+  else 
+    final_total = total
+  end
+  final_total
 end
+
   # Consult README for inputs and outputs
   #
   # This method should call
