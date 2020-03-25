@@ -105,6 +105,7 @@ def checkout(cart, coupons)
   
   element_index = 0
   total = 0.00
+  binding.pry
   while element_index < c_array do 
     total += c_array[element_index][:price] * c_array[element_index][:count]
     element_index += 1
