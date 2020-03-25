@@ -104,7 +104,7 @@ def checkout(cart, coupons)
   #begin looping through cart to calculate total
   
   element_index = 0
-  total = 0
+  total = 0.00
   while element_index < c_array do 
     total += c_array[element_index][:price] * c_array[element_index][:count]
     element_index += 1
