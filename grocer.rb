@@ -72,6 +72,7 @@ end
 
 
  def apply_clearance(cart)
+   binding.pry
    after_clearance_array = []
    element_index = 0 
    while element_index < cart.legnth do 
