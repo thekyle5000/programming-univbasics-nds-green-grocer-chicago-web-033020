@@ -100,7 +100,7 @@ def checkout(cart, coupons)
   cc_array = consolidate_cart(cart)
   ac_array = apply_coupons(cc_array, coupons)
   c_array = apply_clearance(ac_array)
-  binding.pry
+  
   #begin looping through cart to calculate total
   element_index = 0
   total = 0
