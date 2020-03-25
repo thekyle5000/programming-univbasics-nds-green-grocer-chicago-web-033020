@@ -76,7 +76,8 @@ end
    element_index = 0 
    while element_index < cart.legnth do 
      if cart[element_index][:clearance] = true
-       cart[element_index][:price] *= .8
+       update_price = cart[element_index][:price]
+       cart[element_index][:price]
        
    
  end
