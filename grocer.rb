@@ -72,6 +72,7 @@ end
 
 
  def apply_clearance(cart)
+   after_clearance_array = []
    
  end
   # Consult README for inputs and outputs
