@@ -71,21 +71,21 @@ end
   # REMEMBER: This method **should** update cart
 
 
-# def apply_clearance(cart)
-#   after_clearance_array = []
-#   element_index = 0 
-#   while element_index < cart.legnth do 
-#     if cart[element_index][:clearance] = true
-#       og_price = cart[element_index][:price]
-#       cart[element_index][:price] = (og_price * 0.8).round(2)
-#       after_clearance_array << cart[element_index]
-#     else
-#       after_clearance_array << cart[element_index]
-#     end
-#     element_index += 1
-#   end
-#   after_clearance_array
-# end 
+def apply_clearance(cart)
+  after_clearance_array = []
+  element_index = 0 
+  while element_index < cart.legnth do 
+    if cart[element_index][:clearance] = true
+      og_price = cart[element_index][:price]
+      cart[element_index][:price] = (og_price * 0.8).round(2)
+      after_clearance_array << cart[element_index]
+    else
+      after_clearance_array << cart[element_index]
+    end
+    element_index += 1
+  end
+  after_clearance_array
+end 
        
        
    
