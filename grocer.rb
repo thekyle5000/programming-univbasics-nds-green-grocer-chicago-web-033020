@@ -102,6 +102,7 @@ def checkout(cart, coupons)
   c_array = apply_clearance(ac_array)
   
   #begin looping through cart to calculate total
+  
   element_index = 0
   total = 0
   while element_index < c_array do 
