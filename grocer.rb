@@ -73,6 +73,11 @@ end
 
  def apply_clearance(cart)
    after_clearance_array = []
+   element_index = 0 
+   while element_index < cart.legnth do 
+     if cart[element_index][:clearance] = true
+       cart[element_index][:price] *= .8
+       
    
  end
   # Consult README for inputs and outputs
