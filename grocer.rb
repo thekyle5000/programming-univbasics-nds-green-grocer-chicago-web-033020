@@ -78,6 +78,7 @@ def apply_clearance(cart)
     if cart[element_index][:clearance] = true
       og_price = cart[element_index][:price]
       cart[element_index][:price] = (og_price * 0.8).round(2)
+      binding.pry
       after_clearance_array << cart[element_index]
     else
       after_clearance_array << cart[element_index]
