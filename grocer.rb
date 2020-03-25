@@ -96,8 +96,9 @@ end
   # REMEMBER: This method **should** update cart
 
 
-# def checkout(cart, coupons)
-# end
+def checkout(cart, coupons)
+  
+end
   # Consult README for inputs and outputs
   #
   # This method should call
