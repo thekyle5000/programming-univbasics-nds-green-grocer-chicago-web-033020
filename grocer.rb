@@ -77,8 +77,8 @@ end
    while element_index < cart.legnth do 
      if cart[element_index][:clearance] = true
        update_price = cart[element_index][:price]
-       cart[element_index][:price] = update_price * .8
-       binding.pry
+       cart[element_index][:price] = (update_price * 0.8).round(2)
+       
        
    
  end
